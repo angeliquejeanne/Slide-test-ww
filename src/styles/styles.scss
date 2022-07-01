@@ -1,0 +1,17 @@
+@import 'mixin/__index';
+
+:root {
+    --color-text: #384552;
+    --color-bg: #fff;
+    --color-effect: #FFBE2B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sr-only {
+    @include sr-only;
+}

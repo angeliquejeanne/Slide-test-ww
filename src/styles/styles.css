@@ -1,0 +1,24 @@
+:root {
+  --color-text: #384552;
+  --color-bg: #fff;
+  --color-effect: #FFBE2B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+/*# sourceMappingURL=styles.css.map */
