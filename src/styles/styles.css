@@ -21,4 +21,238 @@
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: var(--color-bg);
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-text);
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0 35px 0 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  width: 100%;
+  height: 5rem;
+  border-bottom: 2px solid var(--color-effect);
+}
+
+.header img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width: 3rem;
+}
+
+.h1 {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+#main {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+#main h2 {
+  border-bottom: 2px solid var(--color-effect);
+  width: 150px;
+  padding: 10px;
+}
+
+#main .clients__logo {
+  width: 100%;
+  margin: 2em auto;
+  position: relative;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  height: 400px;
+}
+
+#main .clients__logo .clients__wrap {
+  /*width: 680px; */
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+#main .clients__logo .clients__wrap #list__item {
+  position: relative;
+  left: 0px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 9999px;
+}
+
+#main .clients__logo .clients__wrap #list__item .item {
+  float: left;
+  width: 260px;
+  padding: 0px;
+  margin: 0px 5px 0 5px;
+  position: relative;
+  background: #c0c0c0;
+  line-height: 186px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#main .clients__logo .clients__wrap #list__item .item a img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 240px;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  transition: 0 linear left;
+}
+
+#main .clients__logo .clients__wrap #list__item__reverse {
+  position: relative;
+  right: -100px;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 9999px;
+}
+
+#main .clients__logo .clients__wrap #list__item__reverse .item {
+  float: left;
+  width: 260px;
+  padding: 0px;
+  margin: 0px 5px 0 5px;
+  position: relative;
+  background: #c0c0c0;
+  line-height: 186px;
+  font-size: 2em;
+  text-align: center;
+}
+
+#main .clients__logo .clients__wrap #list__item__reverse .item a img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 240px;
+  max-height: 100%;
+  -webkit-transition: 0 linear right;
+  transition: 0 linear right;
+}
+
+#main .clients-wrap {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+#main .clients-wrap #clientslogo,
+#main .clients-wrap #clientslogoreverse {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main .clients-wrap #clientslogo .list,
+#main .clients-wrap #clientslogoreverse .list {
+  display: block;
+  float: left;
+  position: relative;
+  width: 320px;
+  line-height: 100px;
+  text-align: center;
+}
+
+#main .clients-wrap #clientslogo .list-reverse,
+#main .clients-wrap #clientslogoreverse .list-reverse {
+  display: block;
+  float: left;
+  position: relative;
+  width: 320px;
+  line-height: 100px;
+  text-align: center;
+}
+
+#main .clients-wrap img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 150px;
+  max-height: 100%;
+  -webkit-transition: 0 linear left;
+  transition: 0 linear left;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ebebeb;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 1rem .5rem;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
